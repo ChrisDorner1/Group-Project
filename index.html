@@ -8,8 +8,60 @@
     <link rel="stylesheet" type="reset/css" href="./assets/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 </head>
+<header>
+  <h1>Spoofy Song Suggestions</h1>
+ </header> 
+  <section>
+    <div class="search-container">
+        <form>
+          <input type="text" placeholder="Search for songs" name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
+    
+  </section>
+    <form> 
+    <input type="text" placeholder="Spotify Username..." name="q" id="search-box">
+    <button type="submit">Search</button>
+  </form>
+  
 <body>
+    <h2>My Top 5</h2>
+  <section>
+	<div class="song-list"></div>
+  <ol>
+    <li>Song 1</li>
+    <li>Song 2</li>
+    <li>Song 3</li>
+    <li>Song 4</li>
+    <li>Song 5</li>
+  </ol>
+  <h2>New Suggestions</h2>
+  <div class="song-suggestions">
+    <ol>
+      <li>Suggestion 1</li>
+      <li>Suggestion 2</li>
+      <li>Suggestion 3</li>
+      <li>Suggestion 4</li>
+      <li>Suggestion 5</li>
+    </ol>
+  </div>
+</section>
+    <style>
+      .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 20px;
+        border: 1px solid #ccc;
+      }
+    </style>
+    <div class="center">
+      <h2>Lyrically Challenge</h2>
+    </div>
 
+</body>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
