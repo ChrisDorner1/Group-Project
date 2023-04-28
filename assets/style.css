@@ -1,0 +1,16 @@
+*{
+    color: aliceblue;
+    background-color: #121212 !important;
+}
+.card{
+    border-color: #fff !important;
+}
+
+.container:hover {
+    background-color: #302d2d !important; 
+}
+
+
+.suggestions{
+    background-color: #169c46 !important;
+}
