@@ -13,4 +13,11 @@
 
 .suggestions{
     background-color: #169c46 !important;
+    padding-bottom: 3px;
+}
+
+.right-section{
+    display: flex;
+    justify-content: end;
+    
 }
