@@ -15,33 +15,28 @@
  </header> 
  
  <body>
-  <section>
-    <div class="search-container d-flex justify-content-start">
+  <section class="d-flex justify-content-center">
           <input type="text" placeholder="Search for songs" name="search" id="lyricsInput">
           <button type="submit"><i class="fa fa-search" id="lyricsSearch"></i></button>
+
+          <input type="text" placeholder="Spotify Username..." name="q" id="search-box">
+          <button type="submit">Search</button>
+
           <input type="text" placeholder="Search for related artists" name="search" id="artistInput">
           <button type="submit"><i class="fa fa-search" id="artistSearch"></i></button>
-
-      </div>
-    
-  </section>
-        </div>
-        <div class="d-flex justify-content-end mb-5"> 
-    <input type="text" placeholder="Spotify Username..." name="q" id="search-box">
-    <button type="submit">Search</button>
-        </div>
-    
-   </section>
+ </section>
     
       
-      <div class="right-section card col-3">
+      <div class="col d-flex justify-content-center mt-3">
+        <div class="card">
       <p id="songHere"></p>
       <p id="artistHere"></p>
       <h2><p id="lyricsHere">Lyrics Will Display Here</p></h2> 
       <p class="text-warning" id="lyricsCopyright"></p>
+      </div>
     </div>
 
-  <div class="container card row col-6" style="width: 20rem">
+  <!-- <div class="container card row col-6" style="width: 20rem">
     <h2>My Top 5</h2>
     <ol>
       <li><a href="#">Song Title 1</a> <h6 class="text-muted">by Artist 1</h6></li>
@@ -50,9 +45,10 @@
       <li><a href="#">Song Title 4</a> <h6 class="text-muted">by Artist 4</h6></li>
       <li><a href="#">Song Title 5</a> <h6 class="text-muted">by Artist 5</h6></li>
     </ol>
-  </div>
+  </div> -->
 
-<div class="container card row col-6" style="width: 20rem">
+<div class="container row col-6 mr-1" style="width: 20rem">
+  <div class="card">
   <h2>New Suggestions</h2>
     <ol>
       <li><a href="#">New Suggestion 1</a> <h6 class="text-muted">by Artist 1 </h6></li>
@@ -61,6 +57,7 @@
       <li><a href="#">New Suggestion 4</a> <h6 class="text-muted">by Artist 4 </h6></li>
       <li><a href="#">New Suggestion 5</a> <h6 class="text-muted">by Artist 5 </h6></li>
     </ol>
+  </div>
   </div>
 </section>
     <div class="related-artists">
