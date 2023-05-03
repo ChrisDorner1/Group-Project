@@ -11,7 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/style.css" />
 </head>
 <header>
-  <h1 class="d-flex justify-content-center suggestions text-dark"><i class="fas fa-music suggestions" style="color: #212529;"></i>Spoofy Song Suggestions<i class="fas fa-music suggestions" style="color: #212529;"></i></h1>
+  <h1 class="d-flex justify-content-center suggestions text-dark"><i class="fas fa-music suggestions" style="color: #212529;"></i>Spoof up your Entertainment!<i class="fas fa-music suggestions" style="color: #212529;"></i></h1>
  </header> 
  
  <body>
@@ -32,7 +32,7 @@
    </section>
     
       
-      <div class="col d-flex justify-content-center mt-3">
+      <div class="music col d-none justify-content-center mt-3">
         <div class="card">
       <p id="songHere"></p>
       <p id="artistHere"></p>
@@ -43,17 +43,18 @@
 
 
 </section>
-    <div class="related-artists">
+    <div class="mt-3 card d-none related-artists">
       <p id="searched-artist"></p>
       <p id="related-artist1"></p>
       <p id="related-artist2"></p>
       <p id="related-artist3"></p>
       <p id="related-artist4"></p>
       <p id="related-artist5"></p>
-      <img src="" alt="" id="artistImg">
+      <img class="col-4 d-inline" src="" alt="" id="artistImg">
     </div>
 
-    <div id="superheroSection">
+    <div class="mt-3 d-none superhero" id="superheroSection">
+      <div class="card">
       <div id="mediaDiv">
         <div id="mediaTitle"></div>
         <div id="mediaType"></div>
@@ -65,9 +66,10 @@
         <div id="mediaLanguage"></div>
         <div id="mediaPlot"></div>
       </div>
-      <div id="comicDiv">
+    </div>
+      <div class="mt-3 d-none card" id="comicDiv">
         <div id="comicName"></div>
-        <img src="" alt="" id="comicImg">
+        <img class="col-4" src="" alt="" id="comicImg">
         <div id="comicFullName"></div>
         <div id="comicBio"></div>
         <div id="comicBirth"></div>
