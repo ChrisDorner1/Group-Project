@@ -45,7 +45,6 @@ function captureInputLyrics() {
 function getRelatedArtists () {
     var artistSearch = artistInputEl.value
     var deezerSearch = artistInputEl.value.replace(/\s+/g, '-').toLowerCase();
-    console.log(deezerSearch)
     var getArtistIdURL = 'https://api.musixmatch.com/ws/1.1/artist.search?q_artist='+ artistSearch +'&page_size=5&apikey=fc5dac7d8cef5bd747f29be95f28953d'
     fetch(getArtistIdURL)
     .then(function (response) {
@@ -60,7 +59,7 @@ function getRelatedArtists () {
             return response.json();
         })
         .then(function (data) {
-            // console.log(data)
+            console.log(data)
             relatedArtist1El.innerHTML = data.message.body.artist_list[0].artist.artist_name
             relatedArtist2El.innerHTML = data.message.body.artist_list[1].artist.artist_name
             relatedArtist3El.innerHTML = data.message.body.artist_list[2].artist.artist_name
@@ -96,15 +95,15 @@ var mediaPlotEl = document.getElementById('mediaPlot')
 
 var comicNameEl = document.getElementById('comicName')
 var comicImgEl = document.getElementById('comicImg')
-// var comicFullNameEl = document.getElementById('comicFullName')
-// var comicBirthEl = document.getElementById('comicBirth')
+var comicFullNameEl = document.getElementById('comicFullName')
+var comicBirthEl = document.getElementById('comicBirth')
 var comicAliasesEl = document.getElementById('comicAliases')
-// var comicAlterEgoEl = document.getElementById('comicAlterEgo')
+var comicAlterEgoEl = document.getElementById('comicAlterEgo')
 var comicAlignmentEl = document.getElementById('comicAlignment')
 var comicPublisherEl = document.getElementById('comicPublisher')
-// var comicFirstAppEl = document.getElementById('comicFirstApp')
+var comicFirstAppEl = document.getElementById('comicFirstApp')
 var comicRelativesEl = document.getElementById('comicRelatives')
-// var comicAffiliationEl = document.getElementById('comicAffiliation')
+var comicAffiliationEl = document.getElementById('comicAffiliation')
 var comicOccupationEl = document.getElementById('comicOccupation')
 var comicBaseEl = document.getElementById('comicBase')
 var powerstatHeaderEl = document.getElementById('powerstatHeader')
@@ -144,18 +143,19 @@ function fetchSuperhero() {
     })
     .then(function (data) {
         // console.log(data)
+        console.log(Object.keys(data.results[0].connections))
         comicNameEl.innerHTML = "Name: " +  data.results[0].name
         comicImgEl.setAttribute('src', data.results[0].image.url)
         comicImgEl.setAttribute('alt', data.results[0].name)
-        // comicFullNameEl.innerHTML = "Full Name: " + data.results[0].biography.full-name
-        // comicBirthEl.innerHTML = "Birthplade: " + data.results[0].biography.place-of-birth
+        comicFullNameEl.innerHTML = "Full Name: " + data.results[0].biography['full-name']
+        comicBirthEl.innerHTML = "Birthplade: " + data.results[0].biography['place-of-birth']
         comicAliasesEl.innerHTML = "Aliases: " + data.results[0].biography.aliases
-        // comicAlterEgoEl.innerHTML = "Alter-Egos: " + data.results[0].biography.alter-ego
+        comicAlterEgoEl.innerHTML = "Alter-Egos: " + data.results[0].biography['alter-ego']
         comicAlignmentEl.innerHTML = "Good or Bad?" + data.results[0].biography.alignment
         comicPublisherEl.innerHTML = "Publisher: " + data.results[0].biography.publisher
-        // comicFirstAppEl.innerHTML = "First Appearance: " + data.results[0].biography.first-appearance
+        comicFirstAppEl.innerHTML = "First Appearance: " + data.results[0].biography['first-appearance']
         comicRelativesEl.innerHTML = "Relatives: " + data.results[0].connections.relatives
-        // comicAffiliationEl.innerHTML = "Affiliations: " + data.results[0].connections.group-affiliations
+        comicAffiliationEl.innerHTML = "Affiliations: " + data.results[0].connections['group-affiliation']
         comicOccupationEl.innerHTML = "Occupations: " + data.results[0].work.occupation
         comicBaseEl.innerHTML = "Base/Bases: " + data.results[0].work.base
         powerstatHeaderEl.innerHTML = "Power Stats:"
