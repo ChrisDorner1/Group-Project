@@ -13,10 +13,14 @@ var relatedArtist3El = document.getElementById('related-artist3')
 var relatedArtist4El = document.getElementById('related-artist4')
 var relatedArtist5El = document.getElementById('related-artist5')
 var artistImgEl = document.getElementById('artistImg')
+// var div1El = document.getElementById('div1')
+// var div2El = document.getElementById('div2')
+// var div3El = document.getElementById('div3')
 lyricsSearchEl.addEventListener("click", captureInputLyrics);
 artistSearchEl.addEventListener("click", getRelatedArtists);
 
 function captureInputLyrics() {
+    // div1El.setAttribute('display', 'block')
     var currentSearch = lyricsInputEl.value
     var trackSearch = 'https://api.musixmatch.com/ws/1.1/track.search?q_track=' + currentSearch + '&page_size=3&page=1&s_track_rating=desc&apikey=fc5dac7d8cef5bd747f29be95f28953d'
     fetch(trackSearch)
@@ -43,6 +47,7 @@ function captureInputLyrics() {
 };
 
 function getRelatedArtists () {
+    // div2El.setAttribute('display', 'block')
     var artistSearch = artistInputEl.value
     var deezerSearch = artistInputEl.value.replace(/\s+/g, '-').toLowerCase();
     var getArtistIdURL = 'https://api.musixmatch.com/ws/1.1/artist.search?q_artist='+ artistSearch +'&page_size=5&apikey=fc5dac7d8cef5bd747f29be95f28953d'
@@ -115,6 +120,7 @@ var speedEl = document.getElementById('speed')
 var strengthEl = document.getElementById('strength')
 
 function fetchSuperhero() {
+    // div3El.setAttribute('display', 'block')
     var hero = superheroInputEl.value
     var omdbHero = hero.replace(/\s+/g, '+').toLowerCase();
     var OMDBAPI = 'http://www.omdbapi.com/?t=' + omdbHero + '&plot=full&apikey=187295ff'
