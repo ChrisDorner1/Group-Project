@@ -22,11 +22,12 @@
           <input type="text" placeholder="Search for related artists" name="search" id="artistInput">
           <button type="submit"><i class="fa fa-search" id="artistSearch"></i></button>
 
+          <input type="text" placeholder="Search for a superhero" name="search" id="superheroInput">
+          <button type="submit"><i class="fa fa-search" id="superheroSearch"></i></button>
+
       </div>
     
   </section>
-        </div>
-        <div class="d-flex justify-content-end mb-5"> 
     <input type="text" placeholder="Spotify Username..." name="q" id="search-box">
     <button type="submit">Search</button>
         </div>
@@ -61,8 +62,58 @@
       <li><a href="#">New Suggestion 4</a> <h6 class="text-muted">by Artist 4 </h6></li>
       <li><a href="#">New Suggestion 5</a> <h6 class="text-muted">by Artist 5 </h6></li>
     </ol>
+   </div>
+
+   <div id="superheroSection">
+    <div id="mediaDiv">
+      <div id="mediaTitle"></div>
+      <div id="mediaType"></div>
+      <div id="mediaRelease"></div>
+      <div id="imdbRating"></div>
+      <div id="mediaGenre"></div>
+      <div id="mediaDirector"></div>
+      <div id="mediaActors"></div>
+      <div id="mediaLanguage"></div>
+      <div id="mediaPlot"></div>
+    </div>
+    <div id="comicDiv">
+      <div id="comicName"></div>
+      <img src="" alt="" id="comicImg">
+      <div id="comicFullName"></div>
+      <div id="comicBio"></div>
+      <div id="comicBirth"></div>
+      <div id="comicAliases"></div>
+      <div id="comicAlterEgo"></div>
+      <div id="comicAlignment"></div>
+      <div id="comicFirstApp"></div>
+      <div id="comicPublisher"></div>
+      <div id="comicRelatives"></div>
+      <div id="comicAffiliation"></div>
+      <div id="comicOccupation"></div>
+      <div id="comicBase"></div>
+      <div id="comicPowerstatDiv">
+        <div id="powerstatHeader"></div>
+        <div id="combat"></div>
+        <div id="durability"></div>
+        <div id="intelligence"></div>
+        <div id="power"></div>
+        <div id="speed"></div>
+        <div id="strength"></div>
+    </div>
+   </div>
+
+
+  </div>
+  <div class="right-section row col-6">
+    <h2 class="d-flex justify-content-end card">Lyrics Will Display Here</h2>
   </div>
 </section>
+    <div class="right-section">
+      <p id="songHere"></p>
+      <p id="artistHere"></p>
+      <p id="lyricsHere">Lyrics Will Display Here</p>
+      <p id="lyricsCopyright"></p>
+    </div>
     <div class="related-artists">
       <p id="searched-artist"></p>
       <p id="related-artist1"></p>
@@ -70,8 +121,8 @@
       <p id="related-artist3"></p>
       <p id="related-artist4"></p>
       <p id="related-artist5"></p>
+      <img src="" alt="" id="artistImg">
     </div>
-   </div>
 
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.3/dayjs.min.js" integrity="sha256-iu/zLUB+QgISXBLCW/mcDi/rnf4m4uEDO0wauy76x7U=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
