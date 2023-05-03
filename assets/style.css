@@ -2,11 +2,12 @@
     color: aliceblue;
     background-color: #121212 !important;
 }
-.card{
+/* .card{
     border-color: #fff !important;
-}
+} */
 
 .suggestions{
     background-color: #169c46 !important;
     padding-bottom: 3px;
 }
+
