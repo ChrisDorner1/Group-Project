@@ -1,13 +1,79 @@
 *{
     color: aliceblue;
-    background-color: #121212 !important;
+    background-color: #121212;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-/* .card{
-    border-color: #fff !important;
-} */
 
-.suggestions{
+div{
+    background-color: #121212;
+    padding: 2px;
+    color: white;
+}
+
+span{
+    color:#169c46;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+#songHere, #artistHere {
+    font-size: 20px;
+}
+
+#div2{
+    display: flex;
+    justify-content: center
+}
+
+#box2 {
+    margin: 15px;
+}
+
+#box1{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.haveBorder{
+    border: 2px solid white;
+    border-radius: 5px;
+}
+
+#subHeader, h4, h5{
+    color: #121212;
+    background-color: #55f68d !important;
+}
+
+.nav{
     background-color: #169c46 !important;
-    padding-bottom: 3px;
+    padding: 7px;
 }
 
+i{
+    background-color: #169c46 !important;
+}
+
+button{
+    margin-right: 30px;
+    background-color: #169c46;
+    border: 2px solid white;
+}
+
+input{
+    background-color: #121212;
+    color: white;
+    border: 2px solid white;
+}
+
+.imageSize {
+    height: 200px;
+    width: 200px;
+}
+.imageSize2 {
+    height: 300px;
+    width: 200px;
+}
